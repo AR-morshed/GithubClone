@@ -1,0 +1,13 @@
+//
+//  Staging.xcconfig
+//  GithubClone
+//
+//  Created by Rokon on 5/4/20.
+//  Copyright © 2020 AwesomeCompany. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_NAME = GithubClone-Staging
+XCC_CONFIG_PATH = Staging/BuildConfiguration.plist
