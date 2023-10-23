@@ -28,14 +28,14 @@ public struct TrendingDevelopersFeature: ClientFeatureBased {
         case repositoryResponse(TaskResult<[TrendingUser]>)
     }
 
-    public func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    public func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .onAppear:
             state.isLoadingDeveloperView = true
-            return .task {
-                await .repositoryResponse(TaskResult {
+            return .run { send in
+                await send(.repositoryResponse(TaskResult {
                     try await client.userQueryRequest(query: "swift")
-                })
+                }))
             }
 
         case let .repositoryResponse(.success(users)):

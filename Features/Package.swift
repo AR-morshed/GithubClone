@@ -1,11 +1,11 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Features",
-    platforms: [.macOS(.v12), .iOS(.v15)],
+    platforms: [.macOS(.v12), .iOS(.v17)],
     products: [
         .library(name: "Root",
                  targets: ["Root"]),
@@ -28,7 +28,7 @@ let package = Package(
         .package(path: "../NetworkPlatform"),
         .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
-            from: "0.47.2"
+            exact: "1.2.0"
         ),
         .package(
             url: "https://github.com/mac-cain13/R.swift.git",

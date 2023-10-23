@@ -12,7 +12,7 @@ import TrendingDeveloper
 import TrendingRepository
 import ComposableArchitecture
 
-public struct Root: ReducerProtocol {
+public struct Root: Reducer {
     
     public init() {}
     
@@ -31,7 +31,7 @@ public struct Root: ReducerProtocol {
         case appSettingAction(AppSettingFeature.Action)
     }
 
-    public var body: some ReducerProtocol<State, Action> {
+    public var body: some Reducer<State, Action> {
         Scope(state: \.authenticationState, action: /Action.authenticationAction) {
             AuthenticationFeature()
         }

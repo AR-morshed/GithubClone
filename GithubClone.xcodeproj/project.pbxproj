@@ -26,14 +26,14 @@
 			containerPortal = 2F7B0E4E273AD7AC00C68B1F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2F7B0E55273AD7AC00C68B1F;
-			remoteInfo = "GithubClone";
+			remoteInfo = GithubClone;
 		};
 		2F7B0E71273AD7AD00C68B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F7B0E4E273AD7AC00C68B1F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2F7B0E55273AD7AC00C68B1F;
-			remoteInfo = "GithubClone";
+			remoteInfo = GithubClone;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,11 +55,11 @@
 		2F1CB989291A097F0033C297 /* BuildConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BuildConfiguration.plist; sourceTree = "<group>"; };
 		2F270DC42940B46400913537 /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
 		2F28C5F82942162600B7E601 /* NetworkPlatform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkPlatform; sourceTree = "<group>"; };
-		2F7B0E56273AD7AC00C68B1F /* GithubClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GithubClone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7B0E56273AD7AC00C68B1F /* GithubClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7B0E59273AD7AC00C68B1F /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
-		2F7B0E66273AD7AD00C68B1F /* GithubCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GithubCloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7B0E66273AD7AD00C68B1F /* GithubCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7B0E6A273AD7AD00C68B1F /* __cookiecutter_app_name__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __cookiecutter_app_name__Tests.swift; sourceTree = "<group>"; };
-		2F7B0E70273AD7AD00C68B1F /* GithubCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GithubCloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7B0E70273AD7AD00C68B1F /* GithubCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7B0E74273AD7AD00C68B1F /* __cookiecutter_app_name__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __cookiecutter_app_name__UITests.swift; sourceTree = "<group>"; };
 		2F7B0E76273AD7AD00C68B1F /* __cookiecutter_app_name__UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __cookiecutter_app_name__UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F81EB562942087C00F95809 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				6782D5562912526F0015FCBB /* Preview Content */,
 				67B2B5B329127CF800B2E0AC /* Resources */,
 			);
-			path = "GithubClone";
+			path = GithubClone;
 			sourceTree = "<group>";
 		};
 		2F7B0E69273AD7AD00C68B1F /* GithubCloneTests */ = {
@@ -154,7 +154,7 @@
 			children = (
 				2F7B0E6A273AD7AD00C68B1F /* __cookiecutter_app_name__Tests.swift */,
 			);
-			path = "GithubCloneTests";
+			path = GithubCloneTests;
 			sourceTree = "<group>";
 		};
 		2F7B0E73273AD7AD00C68B1F /* GithubCloneUITests */ = {
@@ -163,7 +163,7 @@
 				2F7B0E74273AD7AD00C68B1F /* __cookiecutter_app_name__UITests.swift */,
 				2F7B0E76273AD7AD00C68B1F /* __cookiecutter_app_name__UITestsLaunchTests.swift */,
 			);
-			path = "GithubCloneUITests";
+			path = GithubCloneUITests;
 			sourceTree = "<group>";
 		};
 		6782D5562912526F0015FCBB /* Preview Content */ = {
@@ -246,11 +246,11 @@
 			);
 			dependencies = (
 			);
-			name = "GithubClone";
+			name = GithubClone;
 			packageProductDependencies = (
 				2FDDF5292940C5EC0022CB12 /* Root */,
 			);
-			productName = "GithubClone";
+			productName = GithubClone;
 			productReference = 2F7B0E56273AD7AC00C68B1F /* GithubClone.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -267,8 +267,8 @@
 			dependencies = (
 				2F7B0E68273AD7AD00C68B1F /* PBXTargetDependency */,
 			);
-			name = "GithubCloneTests";
-			productName = "GithubCloneTests";
+			name = GithubCloneTests;
+			productName = GithubCloneTests;
 			productReference = 2F7B0E66273AD7AD00C68B1F /* GithubCloneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -285,8 +285,8 @@
 			dependencies = (
 				2F7B0E72273AD7AD00C68B1F /* PBXTargetDependency */,
 			);
-			name = "GithubCloneUITests";
-			productName = "GithubCloneUITests";
+			name = GithubCloneUITests;
+			productName = GithubCloneUITests;
 			productReference = 2F7B0E70273AD7AD00C68B1F /* GithubCloneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -323,7 +323,6 @@
 			);
 			mainGroup = 2F7B0E4D273AD7AC00C68B1F;
 			packageReferences = (
-				6782D5B32912554D0015FCBB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 2F7B0E57273AD7AC00C68B1F /* Products */;
 			projectDirPath = "";
@@ -481,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -516,6 +515,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bd.com.monstarlab.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,7 +568,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GithubClone";
+				TEST_TARGET_NAME = GithubClone;
 			};
 			name = "Debug Develop";
 		};
@@ -622,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -657,6 +659,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bd.com.monstarlab.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -707,7 +712,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GithubClone";
+				TEST_TARGET_NAME = GithubClone;
 			};
 			name = "Debug Staging";
 		};
@@ -763,7 +768,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -798,6 +803,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bd.com.monstarlab.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -848,7 +856,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GithubClone";
+				TEST_TARGET_NAME = GithubClone;
 			};
 			name = "Debug Production";
 		};
@@ -898,7 +906,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -933,6 +941,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bd.com.monstarlab.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -983,7 +994,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GithubClone";
+				TEST_TARGET_NAME = GithubClone;
 			};
 			name = "Release Develop";
 		};
@@ -1033,7 +1044,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1068,6 +1079,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bd.com.monstarlab.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1118,7 +1132,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GithubClone";
+				TEST_TARGET_NAME = GithubClone;
 			};
 			name = "Release Staging";
 		};
@@ -1168,7 +1182,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1203,6 +1217,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bd.com.monstarlab.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1253,7 +1270,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GithubClone";
+				TEST_TARGET_NAME = GithubClone;
 			};
 			name = "Release Production";
 		};
@@ -1313,17 +1330,6 @@
 			defaultConfigurationName = "Debug Develop";
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6782D5B32912554D0015FCBB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		2FDDF5292940C5EC0022CB12 /* Root */ = {

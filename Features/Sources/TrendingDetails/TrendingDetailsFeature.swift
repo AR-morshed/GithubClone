@@ -10,7 +10,7 @@ import Domain
 import Foundation
 import SwiftUI
 
-public struct TrendingDetailsFeature: ReducerProtocol {
+public struct TrendingDetailsFeature: Reducer {
     
     public init() {}
     
@@ -27,7 +27,7 @@ public struct TrendingDetailsFeature: ReducerProtocol {
         case onFevButtonTap
     }
 
-    public func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    public func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .alertDismissed:
             return .none

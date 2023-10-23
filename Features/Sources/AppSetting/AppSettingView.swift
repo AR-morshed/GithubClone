@@ -9,7 +9,7 @@ import Commons
 import SwiftUI
 import ComposableArchitecture
 
-public struct AppSettingFeature: ReducerProtocol {
+public struct AppSettingFeature: Reducer {
     
     public init() {}
     
@@ -26,7 +26,7 @@ public struct AppSettingFeature: ReducerProtocol {
         case confirmTapped
     }
 
-    public func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    public func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .signOutPrompt:
             state.alert = .init(
@@ -74,7 +74,7 @@ public struct AppSettingView: View {
                 }
                 .navigationTitle(Text("Settings"))
             }
-            .alert(self.store.scope(state: \.alert), dismiss: .alertDismissed)
+//            .alert(self.store.scope(state: \.alert), dismiss: .alertDismissed)
         }
     }
 }

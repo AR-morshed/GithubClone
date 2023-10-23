@@ -12,7 +12,10 @@ import Root
 #warning("Please rename to your app name")
 @main
 struct MainApp: App {
-    let store = Store(initialState: Root.State(), reducer: Root())
+    let store = Store(initialState: Root.State()) {
+        Root()
+    }
+
     var body: some Scene {
         WindowGroup {
             RootView(store: store)
