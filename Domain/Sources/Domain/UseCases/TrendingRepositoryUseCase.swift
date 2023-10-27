@@ -21,20 +21,3 @@ public final class DefaultTrendingRepositoryUseCase: UseCase {
         return try await repository.trendingRepositories(language: input.language, since: input.since)
     }
 }
-
-//extension DefaultTrendingRepositoryUseCase {
-//    static let live = DefaultTrendingRepositoryUseCase(repository: RepositoryProvider().makeTrendingRepoRepository())
-//}
-
-//extension DependencyValues {
-//    public var defaultTrendingRepositoryUseCase: DefaultTrendingRepositoryUseCase {
-//        get { self[DefaultTrendingRepositoryUseCase.self] }
-//        set { self[DefaultTrendingRepositoryUseCase.self] = newValue }
-//    }
-//}
-//
-//extension DefaultTrendingRepositoryUseCase: DependencyKey {
-//    public static var liveValue =
-//    public static var testValue = TrendingRepositoryClient.stubbed
-//    public static var previewValue = TrendingRepositoryClient.stubbed
-//}
