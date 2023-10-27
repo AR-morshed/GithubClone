@@ -39,7 +39,7 @@ public struct TrendingRepositoryFeature: ClientFeatureBased {
         case repositoryResponse(TaskResult<[TrendingRepository]>)
     }
 
-    public var body: some ReducerProtocol<State, Action> {
+    public var body: some Reducer<State, Action> {
         Scope(state: \.searchState, action: /Action.search) {
             SearchFeature()
         }
@@ -55,10 +55,10 @@ public struct TrendingRepositoryFeature: ClientFeatureBased {
 
             case .onAppear:
                 state.isLoadingRepositoryView = true
-                return .task {
-                    await .repositoryResponse(TaskResult {
+                return .run { send in
+                    await send(.repositoryResponse(TaskResult {
                         try await client.repositoryQueryRequest(query: "swift")
-                    })
+                    }))
                 }
 
             case let .repositoryResponse(.success(repositories)):
@@ -85,10 +85,10 @@ public struct TrendingRepositoryFeature: ClientFeatureBased {
 
                 state.isLoadingRepositoryView = true
 
-                return .task {
-                    await .repositoryResponse(TaskResult {
+                return .run { send in
+                    await send(.repositoryResponse(TaskResult {
                         try await client.repositoryQueryRequest(query: query)
-                    })
+                    }))
                 }
 
             case .search, .details:

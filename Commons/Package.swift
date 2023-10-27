@@ -1,11 +1,11 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Commons",
-    platforms: [.macOS(.v12), .iOS(.v15)],
+    platforms: [.macOS(.v12), .iOS(.v17)],
     products: [
         .library(
             name: "Commons",
@@ -20,7 +20,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
-            from: "0.47.2"
+            exact: "1.2.0"
         )
     ],
     targets: [

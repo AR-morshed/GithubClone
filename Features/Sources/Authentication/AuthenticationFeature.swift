@@ -9,7 +9,7 @@ import Commons
 import SwiftUI
 import ComposableArchitecture
 
-public struct AuthenticationFeature: ReducerProtocol {
+public struct AuthenticationFeature: Reducer {
     public struct State: Equatable {
         public var isSignIn = false
         var alert: AlertState<LoginAction>?
@@ -35,7 +35,7 @@ public struct AuthenticationFeature: ReducerProtocol {
     
     public init() {}
 
-    public func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    public func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .emailTypingChanged:
             return .none

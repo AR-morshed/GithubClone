@@ -67,7 +67,7 @@ public struct TrendingDeveloperView: View, ClientStoreBased {
                 .onAppear {
                     viewStore.send(.onAppear)
                 }
-                .alert(self.store.scope(state: \.alert), dismiss: .alertDismissed)
+//                .alert(self.store.scope(state: \.alert), dismiss: .alertDismissed)
             }
         }
     }
@@ -76,7 +76,7 @@ public struct TrendingDeveloperView: View, ClientStoreBased {
 struct TrendingDeveloperView_Previews: PreviewProvider {
     static var previews: some View {
         TrendingDeveloperView(store:
-            Store(initialState: TrendingDevelopersFeature.State(), reducer: TrendingDevelopersFeature())
+                                Store(initialState: TrendingDevelopersFeature.State()) { TrendingDevelopersFeature() }
         )
     }
 }

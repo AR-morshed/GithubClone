@@ -16,7 +16,7 @@ public enum SearchEvent {
     case cancelAll
 }
 
-public struct SearchFeature: ReducerProtocol {
+public struct SearchFeature: Reducer {
     public struct State: Equatable {
         public init () {}
         var searchBoxPlaceHolderText = "Search keyword..."
@@ -32,7 +32,7 @@ public struct SearchFeature: ReducerProtocol {
     
     public init () {}
 
-    public func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    public func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case let .searchQueryChanged(query):
             struct SearchLocationId: Hashable {}

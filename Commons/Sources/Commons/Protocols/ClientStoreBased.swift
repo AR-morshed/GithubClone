@@ -8,10 +8,10 @@
 import SwiftUI
 import ComposableArchitecture
 
-public typealias ClientFeatureBased = ReducerProtocol & ClientBased
+public typealias ClientFeatureBased = Reducer & ClientBased
 
 public protocol StoreBased where Self: View {
-    associatedtype Feature: ReducerProtocol
+    associatedtype Feature: Reducer
     var store: StoreOf<Feature> { get }
 }
 

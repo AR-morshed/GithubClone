@@ -96,7 +96,6 @@ public struct TrendingRepositoryView: View, ClientStoreBased {
                 .onAppear {
                     viewStore.send(.onAppear)
                 }
-                .alert(self.store.scope(state: \.alert), dismiss: .alertDismissed)
             }
         }
     }
@@ -105,6 +104,7 @@ public struct TrendingRepositoryView: View, ClientStoreBased {
 struct TrendingRepositoryView_Previews: PreviewProvider {
     static var previews: some View {
         TrendingRepositoryView(
-            store: Store(initialState: TrendingRepositoryFeature.State(), reducer: TrendingRepositoryFeature()))
+            store: Store(initialState: TrendingRepositoryFeature.State()) {  TrendingRepositoryFeature()
+            })
     }
 }
