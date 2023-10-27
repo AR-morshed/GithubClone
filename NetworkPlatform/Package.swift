@@ -18,10 +18,6 @@ let package = Package(
             from: "15.0.0"
         ),
         .package(
-            url: "https://github.com/Swinject/Swinject.git",
-            from: "2.8.0"
-        ),
-        .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             exact: "1.2.0"
         )
