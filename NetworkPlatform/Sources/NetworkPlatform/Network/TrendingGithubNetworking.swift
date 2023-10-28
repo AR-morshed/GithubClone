@@ -74,12 +74,4 @@ extension TrendingGithubNetworking {
                                                                     since: since),
                                               type: TrendingRepository.self)
     }
-
-    func trendingDevelopers(language: String,
-                            since: String) async throws -> [TrendingUser]
-    {
-        return try await trendingRequestArray(.trendingDevelopers(language: language,
-                                                                  since: since),
-                                              type: TrendingUser.self)
-    }
 }

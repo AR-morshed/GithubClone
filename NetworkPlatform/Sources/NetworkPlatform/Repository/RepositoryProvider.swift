@@ -19,15 +19,7 @@ public struct RepositoryProvider: Domain.RepositoryProvider {
         return TrendingRepoRepository(network: networkProvider.makeTrendingGithubNetworking())
     }
 
-    public func makeTrendingDeveloperRepository() -> Domain.TrendingDeveloperRepository {
-        return TrendingDeveloperRepository(network: networkProvider.makeTrendingGithubNetworking())
-    }
-
     public func makeTrendingRepoRepositoryStubbed() -> Domain.TrendingRepoRepository {
         return TrendingRepoRepository(network: networkProvider.makeTrendingGithubNetworkingStubbed())
-    }
-
-    public func makeTrendingDeveloperRepositoryStubbed() -> Domain.TrendingDeveloperRepository {
-        return TrendingDeveloperRepository(network: networkProvider.makeTrendingGithubNetworkingStubbed())
     }
 }

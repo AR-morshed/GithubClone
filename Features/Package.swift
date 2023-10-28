@@ -10,15 +10,6 @@ let package = Package(
         .library(name: "Root",
                  targets: ["Root"]),
         
-        .library(name: "AppSetting",
-                 targets: ["AppSetting"]),
-        
-        .library(name: "Authentication",
-                 targets: ["Authentication"]),
-        
-        .library(name: "TrendingDeveloper",
-                    targets: ["TrendingDeveloper"]),
-        
         .library(name: "TrendingRepository",
                     targets: ["TrendingRepository"]),
     ],
@@ -39,32 +30,9 @@ let package = Package(
         .target(
             name: "Root",
             dependencies: [
-                "AppSetting",
-                "Authentication",
-                "TrendingDeveloper",
                 "TrendingRepository"
             ]),
-        
-        .target(
-            name: "AppSetting",
-            dependencies: [
-                .product(name: "Domain", package: "Domain"),
-                .product(name: "Commons", package: "Commons"),
-            ]),
-        .target(
-            name: "Authentication",
-            dependencies: [
-                .product(name: "Domain", package: "Domain"),
-                .product(name: "Commons", package: "Commons"),
-                .product(name: "RswiftLibrary", package: "R.swift"),
-                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
-            ]),
-        .target(
-            name: "TrendingDeveloper",
-            dependencies: [
-                .product(name: "Domain", package: "Domain"),
-                .product(name: "Commons", package: "Commons"),
-            ]),
+    
         .target(
             name: "TrendingRepository",
             dependencies: [
@@ -79,9 +47,5 @@ let package = Package(
                 .product(name: "Domain", package: "Domain"),
                 .product(name: "Commons", package: "Commons"),
             ]),
-        
-            .testTarget(
-                name: "AppSettingTests",
-                dependencies: ["AppSetting"]),
     ]
 )

@@ -9,5 +9,4 @@ import Foundation
 
 public protocol RepositoryProvider {
     func makeTrendingRepoRepository() -> TrendingRepoRepository
-    func makeTrendingDeveloperRepository() -> TrendingDeveloperRepository
 }
