@@ -15,10 +15,6 @@ let package = Package(
         .package(path: "../Domain"),
         .package(path: "../NetworkPlatform"),
         .package(
-            url: "https://github.com/Swinject/Swinject.git",
-            from: "2.8.0"
-        ),
-        .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             exact: "1.2.0"
         )
@@ -29,7 +25,6 @@ let package = Package(
             dependencies: [
                 .product(name: "Domain", package: "Domain"),
                 .product(name: "NetworkPlatform", package: "NetworkPlatform"),
-                .product(name: "Swinject", package: "Swinject"),
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
             ]),
     ]

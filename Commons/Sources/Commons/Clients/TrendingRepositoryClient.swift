@@ -12,13 +12,7 @@ import ComposableArchitecture
 
 public struct TrendingRepositoryClient: ClientProtocol {
     private let repositoryUseCase: AnyRepositoryUseCase
-    
-    @Inject(name: ClientType.live())
-    private static var repositoryLiveUseCase: DefaultTrendingRepositoryUseCase
-    
-    @Inject(name: ClientType.stubbed())
-    private static var repositoryStubbedUseCase: DefaultTrendingRepositoryUseCase
-    
+
     public init(trendingRepositoryUseCase: AnyRepositoryUseCase) {
         self.repositoryUseCase = trendingRepositoryUseCase
     }
@@ -33,10 +27,10 @@ public struct TrendingRepositoryClient: ClientProtocol {
 
 extension TrendingRepositoryClient {
     // MARK: - Live API implementation
-    static let live = TrendingRepositoryClient(trendingRepositoryUseCase: AnyRepositoryUseCase(with: repositoryLiveUseCase))
+    static let live = TrendingRepositoryClient(trendingRepositoryUseCase: AnyRepositoryUseCase(with: DefaultTrendingRepositoryUseCase(repository: NetworkPlatform.RepositoryProvider().makeTrendingRepoRepository())))
     
     // MARK: - Mock API implementations
-    static let stubbed = TrendingRepositoryClient(trendingRepositoryUseCase: AnyRepositoryUseCase(with: repositoryStubbedUseCase))
+    static let stubbed = TrendingRepositoryClient(trendingRepositoryUseCase: AnyRepositoryUseCase(with: DefaultTrendingRepositoryUseCase(repository: NetworkPlatform.RepositoryProvider().makeTrendingRepoRepositoryStubbed())))
 }
 
 extension DependencyValues {
